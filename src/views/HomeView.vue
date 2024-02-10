@@ -20,18 +20,18 @@ const detectClickSide = (event: MouseEvent) => {
 
 <template>
   <v-card  @click="detectClickSide($event)">
-    <v-card-title>Home</v-card-title>
+    <!-- <v-card-title>Home</v-card-title> -->
     <v-card-text>
       <v-row>
-        <v-col>
-          Apple
+        <v-col class="text-center">
+          <a class="text-h1">Apple</a>
         </v-col>
       </v-row>
       <v-row>
-        <v-col>
+        <v-col class="text-center">
           Correct: {{ correctCount }}
         </v-col>
-        <v-col>
+        <v-col class="text-center">
           Wrong: {{ wrongCount }}
         </v-col>
       </v-row>
