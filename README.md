@@ -1,5 +1,14 @@
 # word-guessing-frontend
+## How to start
+### 1. 安裝套件
+```
+npm install
+```
 
+### 2. 進入開發模式
+```
+npm run dev
+```
 
 
 ## 建立各式 ICON
