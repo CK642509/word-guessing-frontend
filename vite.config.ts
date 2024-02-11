@@ -14,7 +14,25 @@ export default defineConfig({
       registerType: 'autoUpdate',
       devOptions: {
         enabled: true
-      }
+      },
+      manifest: {
+        name: 'My App',
+        short_name: 'App',
+        start_url: '/',
+        display: 'standalone',
+        icons: [
+          {
+            src: '/path-to-icon.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+        ],
+      },
+      workbox: {
+        // Workbox options, for example:
+        skipWaiting: true,
+        clientsClaim: true,
+      },
     })
   ],
   resolve: {
