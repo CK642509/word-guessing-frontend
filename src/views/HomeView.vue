@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-const correctCount = ref(0);
-const wrongCount = ref(0);
+const correctCount = ref<number>(0);
+const wrongCount = ref<number>(0);
 
 const detectClickSide = (event: MouseEvent) => {
   const rect = (event.target as HTMLElement).getBoundingClientRect();
