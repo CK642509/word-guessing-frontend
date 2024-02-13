@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import wordbank from '@/utils/wordbank.js';
+import wordbank from '@/utils/wordbank';
 
 const correctCount = ref<number>(0);
 const wrongCount = ref<number>(0);
